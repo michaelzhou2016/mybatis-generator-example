@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: generator
+  datasource:
+    url: jdbc:postgresql://x:5432/otaeai?currentSchema=public&stringtype=unspecified
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml  # XML 映射文件路径
+  type-aliases-package: com.example.model   # 实体类别名包
+#  config-location: classpath:sql-mapper-config.xml
